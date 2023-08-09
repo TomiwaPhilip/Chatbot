@@ -2,7 +2,10 @@ import streamlit as st
 import openai
 import time
 
-st.title('Chat With TomBot from GPT')
+st.title('Chat With TomBot from GPT 🚀')
+st.write('## **Try something simple with my new GPT!** ☁')
+st.write('### **Try asking any fucking question...!** 😛')
+st.divider()
 
 # Set OpenAi API key with streamlit secrets
 openai.api_key = st.secrets['OPENAI_API_KEY']
@@ -46,3 +49,4 @@ if prompt := st.chat_input("What's up?"):
         message_placeholder.markdown(full_response)
     st.session_state.messages.append({'role': 'assistant', 'content': full_response})
 
+st.write("**Disclaimer: Please we do not use, save or keep anyone's data**")
